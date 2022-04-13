@@ -40,7 +40,3 @@ export default function bubbleSort(inputArray: number[], sortOrder: SortOrder= S
   return inputArray;
 }
 
-const beforeBubble = [4,5,2,3,1,9,1,2,3,4];
-
-console.log(bubbleSort(beforeBubble, SortOrder.ASC), SortOrder.ASC);
-console.log(bubbleSort(beforeBubble, SortOrder.DSC), SortOrder.DSC);

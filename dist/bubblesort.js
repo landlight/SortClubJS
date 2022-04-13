@@ -39,7 +39,4 @@ function bubbleSort(inputArray, sortOrder = "ascending" /* ASC */) {
     return inputArray;
 }
 exports.default = bubbleSort;
-const beforeBubble = [4, 5, 2, 3, 1, 9, 1, 2, 3, 4];
-console.log(bubbleSort(beforeBubble, "ascending" /* ASC */), "ascending" /* ASC */);
-console.log(bubbleSort(beforeBubble, "descending" /* DSC */), "descending" /* DSC */);
-//# sourceMappingURL=bubblesort.js.map
+//# sourceMappingURL=bubbleSort.js.map
