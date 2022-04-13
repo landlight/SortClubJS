@@ -1,0 +1,22 @@
+{
+  "name": "sortclubjs",
+  "version": "1.0.0",
+  "description": "Just Me Practising Sorting Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landlight/SortClubJS.git"
+  },
+  "author": "Chit Khine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/landlight/SortClubJS/issues"
+  },
+  "homepage": "https://github.com/landlight/SortClubJS#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
