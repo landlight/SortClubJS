@@ -10,12 +10,13 @@
  * @param inputArray
  * @returns sortedArray
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-function selectionSort(inputArray, sortOrder = "ascending" /* ASC */) {
-    for (let i = 0; i < inputArray.length - 1; i++) {
-        let min = inputArray[i];
-        let position = i;
-        for (let j = i; j <= inputArray.length - 1; j++) {
+exports.__esModule = true;
+function selectionSort(inputArray, sortOrder) {
+    if (sortOrder === void 0) { sortOrder = "ascending" /* ASC */; }
+    for (var i = 0; i < inputArray.length - 1; i++) {
+        var min = inputArray[i];
+        var position = i;
+        for (var j = i; j <= inputArray.length - 1; j++) {
             if (sortOrder === "ascending" /* ASC */ && min > inputArray[j]) {
                 min = inputArray[j];
                 position = j;
@@ -25,7 +26,7 @@ function selectionSort(inputArray, sortOrder = "ascending" /* ASC */) {
                 position = j;
             }
             if (j === inputArray.length - 1 && position != -1) {
-                const temp = inputArray[i];
+                var temp = inputArray[i];
                 inputArray[i] = min;
                 inputArray[position] = temp;
             }
@@ -33,8 +34,7 @@ function selectionSort(inputArray, sortOrder = "ascending" /* ASC */) {
     }
     return inputArray;
 }
-exports.default = selectionSort;
+exports["default"] = selectionSort;
 // const unsortedArray = [9, 8, 4, 3, 6, 5, 2, 1, 54, 43, 19, 17];
 // console.log(SortingTypes.SELECTION_SORT, selectionSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
 // console.log(SortingTypes.SELECTION_SORT, selectionSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
-//# sourceMappingURL=selectionSort.js.map

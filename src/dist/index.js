@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var bubbleSort_1 = require("./bubbleSort");
+var selectionSort_1 = require("./selectionSort");
+console.log("hello, i will write the sorting methods and description here \n");
+var unsortedArray = [9, 8, 4, 3, 6, 5, 2, 1, 54, 43, 19, 17];
+console.log("Bubble Sort" /* BUBBLE_SORT */, bubbleSort_1["default"](unsortedArray, "ascending" /* ASC */), "ascending" /* ASC */);
+console.log("Bubble Sort" /* BUBBLE_SORT */, bubbleSort_1["default"](unsortedArray, "descending" /* DSC */), "descending" /* DSC */);
+console.log("Selection Sort" /* SELECTION_SORT */, selectionSort_1["default"](unsortedArray, "ascending" /* ASC */), "ascending" /* ASC */);
+console.log("Selection Sort" /* SELECTION_SORT */, selectionSort_1["default"](unsortedArray, "descending" /* DSC */), "descending" /* DSC */);
