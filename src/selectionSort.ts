@@ -10,7 +10,7 @@
  * @returns sortedArray
  */
 
- import { SortingTypes, SortOrder } from "./types";
+ import { SortOrder } from "./types";
 
  export default function selectionSort(inputArray: number[], sortOrder: SortOrder= SortOrder.ASC): number[] {
    for (let i = 0; i < inputArray.length -1; i++) {

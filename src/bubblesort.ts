@@ -12,7 +12,7 @@
  * @returns sortedArray
  */
 
-import { SortingTypes, SortOrder } from "./types";
+import { SortOrder } from "./types";
 
 export default function bubbleSort(inputArray: number[], sortOrder: SortOrder= SortOrder.ASC): number[] {
   let swapped = true;

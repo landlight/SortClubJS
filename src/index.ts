@@ -1,4 +1,5 @@
 import bubbleSort from "./bubbleSort";
+import insertionSort from "./insertionSort";
 import selectionSort from "./selectionSort";
 import { SortingTypes, SortOrder } from "./types";
 
@@ -11,3 +12,6 @@ console.log(SortingTypes.BUBBLE_SORT, bubbleSort(unsortedArray, SortOrder.DSC), 
 
 console.log(SortingTypes.SELECTION_SORT, selectionSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
 console.log(SortingTypes.SELECTION_SORT, selectionSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
+
+console.log(SortingTypes.INSERTION_SORT, insertionSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
+console.log(SortingTypes.INSERTION_SORT, insertionSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
