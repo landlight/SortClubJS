@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var bubbleSort_1 = require("./bubbleSort");
 var insertionSort_1 = require("./insertionSort");
+var mergeSort_1 = require("./mergeSort");
 var selectionSort_1 = require("./selectionSort");
 console.log("hello, i will write the sorting methods and description here \n");
 var unsortedArray = [9, 8, 4, 3, 6, 5, 2, 1, 54, 43, 19, 17];
@@ -11,3 +12,5 @@ console.log("Selection Sort" /* SELECTION_SORT */, selectionSort_1["default"](un
 console.log("Selection Sort" /* SELECTION_SORT */, selectionSort_1["default"](unsortedArray, "descending" /* DSC */), "descending" /* DSC */);
 console.log("Insertion Sort" /* INSERTION_SORT */, insertionSort_1["default"](unsortedArray, "ascending" /* ASC */), "ascending" /* ASC */);
 console.log("Insertion Sort" /* INSERTION_SORT */, insertionSort_1["default"](unsortedArray, "descending" /* DSC */), "descending" /* DSC */);
+console.log("Merge Sort" /* MERGE_SORT */, mergeSort_1["default"](unsortedArray, "ascending" /* ASC */), "ascending" /* ASC */);
+console.log("Merge Sort" /* MERGE_SORT */, mergeSort_1["default"](unsortedArray, "descending" /* DSC */), "descending" /* DSC */);
