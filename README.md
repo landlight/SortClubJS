@@ -12,3 +12,9 @@ Sorting Algorithms
 
 
 ... seems like default sort by node.js seems a bit quicker 
+
+For using the items: 
+
+const { default: bubbleSort } = require("sort-club-js/dist/bubbleSort");
+
+Use the sorting, you would like to choose -> only work for numbers and I am lazy to update the looks. Have fun.
