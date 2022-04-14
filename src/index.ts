@@ -2,6 +2,7 @@ import bubbleSort from "./bubbleSort";
 import insertionSort from "./insertionSort";
 import mergeSort from "./mergeSort";
 import quickSort from "./quickSort";
+import randomQuickSort from "./randomQuickSort";
 import selectionSort from "./selectionSort";
 import { SortingTypes, SortOrder } from "./types";
 
@@ -34,11 +35,20 @@ console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), So
 console.timeEnd(SortingTypes.QUICK_SORT);
 
 console.time(SortingTypes.RANDOM_QUICK_SORT);
-console.log(SortingTypes.RANDOM_QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
-console.log(SortingTypes.RANDOM_QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
+console.log(SortingTypes.RANDOM_QUICK_SORT, randomQuickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
+console.log(SortingTypes.RANDOM_QUICK_SORT, randomQuickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
 console.timeEnd(SortingTypes.RANDOM_QUICK_SORT);
 
 console.time(SortingTypes.DEFAULT_SORT);
 console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort(), SortOrder.ASC);
 console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort().reverse(), SortOrder.DSC);
 console.timeEnd(SortingTypes.DEFAULT_SORT);
+
+module.exports = {
+  bubbleSort,
+  mergeSort,
+  selectionSort,
+  insertionSort,
+  quickSort,
+  randomQuickSort
+}
