@@ -2,10 +2,11 @@
 Just Me Practising Sorting Algorithms
 
 Sorting Algorithms
+- Unit Tests
 - Bubble Sort
 - Selection Sort 
 - Insertion Sort
+--- Got lazy and reused code ---
 - Merge Sort 
-- Quick Sort (Not Implemented Yet)
+- Quick Sort 
 - Random Quick Sort (Not Implemented Yet)
-- Unit Tests
