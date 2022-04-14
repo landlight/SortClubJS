@@ -33,6 +33,11 @@ console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), So
 console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
 console.timeEnd(SortingTypes.QUICK_SORT);
 
+console.time(SortingTypes.RANDOM_QUICK_SORT);
+console.log(SortingTypes.RANDOM_QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
+console.log(SortingTypes.RANDOM_QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
+console.timeEnd(SortingTypes.RANDOM_QUICK_SORT);
+
 console.time(SortingTypes.DEFAULT_SORT);
 console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort(), SortOrder.ASC);
 console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort().reverse(), SortOrder.DSC);
