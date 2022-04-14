@@ -9,5 +9,6 @@ export const enum SortingTypes {
   SELECTION_SORT = "Selection Sort",
   INSERTION_SORT = "Insertion Sort",
   MERGE_SORT = "Merge Sort",
-  QUICK_SORT = "Quick Sort"
+  QUICK_SORT = "Quick Sort",
+  DEFAULT_SORT = "Default Sort"
 }

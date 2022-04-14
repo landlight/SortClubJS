@@ -1,6 +1,7 @@
 import bubbleSort from "./bubbleSort";
 import insertionSort from "./insertionSort";
 import mergeSort from "./mergeSort";
+import quickSort from "./quickSort";
 import selectionSort from "./selectionSort";
 import { SortingTypes, SortOrder } from "./types";
 
@@ -26,3 +27,13 @@ console.time(SortingTypes.MERGE_SORT);
 console.log(SortingTypes.MERGE_SORT, mergeSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
 console.log(SortingTypes.MERGE_SORT, mergeSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
 console.timeEnd(SortingTypes.MERGE_SORT);
+
+console.time(SortingTypes.QUICK_SORT);
+console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
+console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
+console.timeEnd(SortingTypes.QUICK_SORT);
+
+console.time(SortingTypes.DEFAULT_SORT);
+console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort(), SortOrder.ASC);
+console.log(SortingTypes.DEFAULT_SORT, unsortedArray.sort().reverse(), SortOrder.DSC);
+console.timeEnd(SortingTypes.DEFAULT_SORT);

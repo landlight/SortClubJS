@@ -1,4 +1,4 @@
-import { SortingTypes, SortOrder } from "./types";
+import { SortOrder } from "./types";
 
 function swap(items, leftIndex, rightIndex){
   var temp = items[leftIndex];
@@ -52,7 +52,7 @@ export default function quickSort(inputArray: number[], sortOrder: SortOrder= So
 }
 
 
-const unsortedArray = [9, 8, 4, 3, 6, 5, 2, 1, 54, 43, 19, 17];
+// const unsortedArray = [9, 8, 4, 3, 6, 5, 2, 1, 54, 43, 19, 17];
 
-console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
-console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);
+// console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.ASC), SortOrder.ASC);
+// console.log(SortingTypes.QUICK_SORT, quickSort(unsortedArray, SortOrder.DSC), SortOrder.DSC);

@@ -10,3 +10,6 @@ Sorting Algorithms
 - Merge Sort 
 - Quick Sort 
 - Random Quick Sort (Not Implemented Yet)
+
+
+... seems like default sort by node.js seems a bit quicker 
